@@ -1,4 +1,4 @@
-![Visitor Count](https://profile-counter.glitch.me/ishaijp/count.svg)
+
 
 This is my PORTFOLIO.
 
