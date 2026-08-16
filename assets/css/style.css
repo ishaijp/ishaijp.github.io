@@ -229,6 +229,14 @@ ul.side-nav li {
   padding: 0;
 }
 
+/* Ensure sidebar fits full screen and scrolls if needed */
+ul.side-nav.fixed.section.table-of-contents {
+  height: 100vh;        /* full viewport height */
+  overflow-y: auto;     /* allow scrolling if items exceed height */
+  padding-bottom: 20px; /* prevent last item from being cut off */
+}
+
+
 /* ul.side-nav.fixed a {
   box-sizing: content-box;
   color: rgb(48, 122, 207);
