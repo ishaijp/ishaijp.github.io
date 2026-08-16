@@ -721,6 +721,11 @@ small {
   min-height: 220px;  /* adjust to fit your longest content */
 }
 
+ul.side-nav li a.active span,
+ul.side-nav li a.active i {
+  color: #000;
+  font-weight: bold;
+}
 
 
 
