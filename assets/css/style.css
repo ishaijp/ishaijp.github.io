@@ -727,9 +727,6 @@ ul.side-nav.fixed.section.table-of-contents li a.active span {
   font-weight: bold;
 }
 
-/* Optional: also change the icon color when active */
-ul.side-nav.fixed.section.table-of-contents li a.active i {
-  color: #000 !important;
-}
+
 
 
