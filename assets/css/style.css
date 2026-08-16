@@ -721,11 +721,18 @@ small {
   min-height: 220px;  /* adjust to fit your longest content */
 }
 
-/* Active state for ALL nav menus */
+/* Active state for ALL nav items */
 ul.side-nav.fixed.section.table-of-contents li a.active span,
 ul#slide-out li a.active span {
+  color: #000 !important;   /* force black text */
+}
+
+/* Optional: also change icons when active */
+ul.side-nav.fixed.section.table-of-contents li a.active i,
+ul#slide-out li a.active i {
   color: #000 !important;
 }
+
 
 
 
