@@ -63,6 +63,10 @@
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
       </li>
+	  <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Membership</span></a>
+      </li>	
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
           class="waves-effect waves-dark teal-text"><i
@@ -151,6 +155,10 @@
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+	  <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Membership</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
@@ -291,7 +299,45 @@ ready to take responsibility and work hard through utilization of my education, 
       </div>
     </section>
 
+    <section id="membership" class="section scrollspy">
+      <h3 class="page-title white-text teal">Membership</h3>
+      <div class="container flow-text">      
+        <p>
+          <ul>
+            <li><b>Membership:</b> <a href="https://www.ictesb.org" target="_blank">ICT EMPLOYEE SOCIETY OF BANGLADESH (ICTESB)</a></li>
+            <li><b>Position:</b> Central Executive Committee -> International Affairs Secretary</li>
+            <li><b>Membership Certificate:</b> 
+    <a href="#" onclick="showPDF()">Click to View</a>
+</li>
 
+<table id="pdfTable" style="display:none; width:100%; border:1px solid #ccc; margin-top:10px;">
+  <tr>
+    <td>
+      <iframe id="pdfFrame" src="" width="100%" height="500px"></iframe>
+    </td>
+  </tr>
+</table>
+
+<script>
+function showPDF() {
+  // Path to your PDF inside the assets folder
+  document.getElementById("pdfFrame").src = "assets/membership_certificate.pdf";
+  document.getElementById("pdfTable").style.display = "table";
+}
+</script>
+	  
+          </ul>
+          
+        </p>
+          
+       
+        <p>
+          Looking for an opportunity to work in a challenging position combining my skills in Resarch & Data analyis field , which provides professional development, interesting experiences and personal growth.
+        </p>
+       
+      </div>
+    </section>
+	  
     <!-- Third Section: Experience -->
     <section id="experience" class="section scrollspy">
       <h3 class="page-title white-text teal">Experience</h3>
