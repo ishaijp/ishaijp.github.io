@@ -721,9 +721,6 @@ small {
   min-height: 220px;  /* adjust to fit your longest content */
 }
 
-ul.side-nav.fixed.section.table-of-contents li a{
-  color: #000 !important;
-}
 
 
 
