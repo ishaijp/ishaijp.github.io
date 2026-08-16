@@ -1541,21 +1541,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 <script>
   $(document).ready(function () {
-    $(".scrollspy").scrollSpy({
-      scrollOffset: 1000,
-      onEnter: function (el) {
-        var id = $(el).attr("id");
-        // clear all active states first
-        $("ul.side-nav li a").removeClass("active");
-        // then apply only to the matching link
-        $("ul.side-nav li a[href='#" + id + "']").addClass("active");
-      }
-    });
+    // custom scroll handler
+    $(window).on("scroll", function () {
+      var scrollPos = $(window).scrollTop();
+      $(".scrollspy").each(function () {
+        var sectionTop = $(this).offset().top - 60; // adjust for fixed nav height
+        var sectionBottom = sectionTop + $(this).outerHeight();
 
-    $(".button-collapse").sideNav({
-      menuWidth: 190,
-      edge: "left",
-      closeOnClick: true
+        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+          var id = $(this).attr("id");
+          $("ul.side-nav li a").removeClass("active");
+          $("ul.side-nav li a[href='#" + id + "']").addClass("active");
+        }
+      });
     });
 
     // highlight immediately on click
@@ -1563,8 +1561,16 @@
       $("ul.side-nav li a").removeClass("active");
       $(this).addClass("active");
     });
+
+    // sideNav init
+    $(".button-collapse").sideNav({
+      menuWidth: 190,
+      edge: "left",
+      closeOnClick: true
+    });
   });
 </script>
+
 
 </body>
 
