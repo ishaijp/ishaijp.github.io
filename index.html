@@ -1545,7 +1545,9 @@
       scrollOffset: 50,
       onEnter: function (el) {
         var id = $(el).attr("id");
+        // clear all active states first
         $("ul.side-nav li a").removeClass("active");
+        // then apply only to the matching link
         $("ul.side-nav li a[href='#" + id + "']").addClass("active");
       }
     });
@@ -1556,14 +1558,13 @@
       closeOnClick: true
     });
 
-    // Reset active on click
+    // highlight immediately on click
     $("ul.side-nav li a").on("click", function () {
       $("ul.side-nav li a").removeClass("active");
       $(this).addClass("active");
     });
   });
 </script>
-
 
 </body>
 
