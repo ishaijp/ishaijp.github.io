@@ -221,6 +221,8 @@ dt {
 
 ul.side-nav {
   width: 190px;
+  height: 100vh;       /* full screen height */
+  overflow-y: auto;
 }
 
 ul.side-nav li {
