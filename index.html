@@ -1539,34 +1539,31 @@
 
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-	  <script>
+<script>
   $(document).ready(function () {
-    // Initialize scrollspy with offset and custom callback
     $(".scrollspy").scrollSpy({
       scrollOffset: 50,
       onEnter: function (el) {
         var id = $(el).attr("id");
-        // remove active from all links
         $("ul.side-nav li a").removeClass("active");
-        // add active to the matching link
         $("ul.side-nav li a[href='#" + id + "']").addClass("active");
       }
     });
 
-    // Initialize collapse button
     $(".button-collapse").sideNav({
       menuWidth: 190,
       edge: "left",
       closeOnClick: true
     });
 
-    // Also highlight immediately when clicked
+    // Reset active on click
     $("ul.side-nav li a").on("click", function () {
       $("ul.side-nav li a").removeClass("active");
       $(this).addClass("active");
     });
   });
 </script>
+
 
 </body>
 
