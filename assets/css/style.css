@@ -95,10 +95,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+ .readme:hover{
   color: white;
   background-color: #00796b;
-} */
+} 
 
 .contactme {
   position: relative;
@@ -119,9 +119,25 @@
   color: #00796b;
   background-color: white;
 }
-/* main body */
+.whatsappme {
+  position: relative;
+  padding: 11px 35px;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
 
-/* body-color */
+.whatsappme:hover{
+  color: #00796b;
+  background-color: white;
+}
 
 body {
   color: #333;
